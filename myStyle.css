@@ -1,0 +1,712 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family: 'Binggrae-Two';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRA_BOLD-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+body{
+    background-image: url("pattern.png");
+    background-repeat: repeat;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d70303;
+    align-items: center;
+    padding: 5px 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+.menuBarItems{
+    display: flex;
+    list-style: none;
+    padding-right: 35px;
+}
+
+.menuBarItems li{
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+.menuBarItems li:hover{
+    background-color: #a10000;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#toggleBtn{
+    position: absolute;
+    right: 15px;
+    top: 23px;
+    display: none;
+}
+
+#back{
+    width: 1080px;
+    max-width: 100%;
+    background-color: #f6d356;
+    margin: 0 auto;
+}
+
+#back2{
+    width: 1080px;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #f6d356;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #d70303;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 60px;
+}
+
+.footertext{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    margin-top: 0px;
+    color: white;
+    line-height: 22px;
+}
+
+
+#mic1{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    
+}
+
+#mic2{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+
+.title{
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.star1{
+    max-width: 25%;
+    display: block;
+    margin-left: 37.5%;
+}
+
+.intro{
+    max-width: 50%;
+    display: block;
+    margin-left: 25%;
+}
+
+.red{
+    max-width: 40%;
+    display: block;
+    margin-left: 30%;
+}
+.bluetext1{
+    font-family: 'Binggrae-Two';
+    color: #00479d;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.star2{
+    max-width: 25%;
+    display: block;
+    margin-left: 37.5%;
+}
+
+.rounding1{
+    max-width: 15%;
+    display: block;
+    margin-left: 42%;
+    padding-top: 10%;
+}
+
+.curry{
+    max-width: 55%;
+    display: block;
+    margin-left: 22%;
+    padding-top: -40%;
+}
+
+.line2{
+    max-width: 50%;
+    display: block;
+    margin-left: 24.5%;
+    padding-top: 3%;
+}
+
+#centerBox{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#rollingList{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+}
+
+#arrow{
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.arrowStyle{
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+}
+
+#curryimg{
+    width: 800px;
+    height: 270px;
+    margin: 0 auto;
+    display: none;
+    padding-top: 25px;
+    align-items: center;
+}
+
+#curryimg img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#curryText{
+    margin-top: 60px;
+}
+
+.curryMainText{
+    font-family: 'Binggrae-Two';
+    color: white;
+    width: 180px;
+    text-align: center;
+    background-color: #d70303;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.currySubText{
+    font-family: 'Binggrae-Two';
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.rounding2{
+    max-width: 15%;
+    display: block;
+    margin-left: 42%;
+    margin-top: 4%;
+    margin-bottom: 100px;
+}
+
+.today{
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redText{
+    font-family: 'Binggrae-Two';
+    text-align: center;
+    color: #d70303;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+.recipe{
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rt{
+    display: block;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#recipeText{
+    display: flex;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.udong{
+    display: block;
+    line-height: 50px;
+    font-family: 'Binggrae-Two';
+    color: #00479d;
+}
+
+.curryTitle{
+    font-family: 'KOTRA_BOLD-Bold';
+    font-size: 40px;
+}
+
+#udong{
+    width: 200px;
+}
+
+#bob{
+    width: 205px;
+}
+
+#ramyeon{
+    width: 215px;
+
+}
+
+#clickText{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    color: #00479d;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.blueStar1{
+    width: 130px;
+}
+.blueStar2{
+    width: 75px;
+}
+.blueStar3{
+    width: 93px;
+}
+
+#long{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#finalLogo{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logoTitle{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+@media only screen and (max-width:768px)
+{
+    .menuBarLogo{
+        padding: 5px 20px;
+    }
+
+    .menuBar{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .menuBarItems{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        display: none;
+    }
+
+    .menuBarItems li{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+
+    #toggleBtn{
+        display: block;
+    }
+
+    .menuBarItems.active,
+    .menuBarLink.active{
+        display: flex;
+    }
+
+    #back{
+        width: 100%;
+        background-color: #f6d356;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    #back2{
+        width: 100%;
+        height: 81vh;
+        background-color: #f6d356;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    #mic1{
+        max-width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        margin-bottom: 300px;
+    }
+    
+
+    #mic2{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto px;
+    }
+
+    .title{
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .star1{
+        max-width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .intro{
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .red{
+        max-width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bluetext1{
+        font-family: 'Binggrae-Two';
+        color: #00479d;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .star2{
+        max-width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .rounding1{
+        max-width: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20%;
+    }
+    
+    .curry{
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: -40%;
+    }
+    
+    .line2{
+        max-width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
+    }
+
+    #centerBox{
+        display: none;
+
+    }
+
+    
+    #curryimg{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #curryimg img{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        padding-top: 10px;    
+    }
+    
+
+    footer{
+        width: 100%;
+        height: 130px;
+        background-color: #d70303;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 30px;
+    }
+    
+    .footertext{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 10px;
+        margin-top: 0px;
+        color: white;
+    }
+
+    #curryText{
+        margin-top: 0px;
+    }
+    
+    .curryMainText{
+        font-family: 'Binggrae-Two';
+        color: white;
+        width: 200px;
+        text-align: center;
+        background-color: #d70303;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    .currySubText{
+        font-family: 'Binggrae-Two';
+        color: black;
+        text-align: center;
+        line-height: 30px;
+        font-size: 92%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .rounding2{
+        max-width: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    
+    .today{
+        max-width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .redText{
+        font-family: 'Binggrae-Two';
+        text-align: center;
+        color: #d70303;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    
+    .recipe{
+        max-width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #rt{
+        display: block;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    #recipeText{
+        display: block;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 100%;
+    }
+    
+    .udong{
+        display: block;
+        line-height: 50px;
+        font-family: 'Binggrae-Two';
+        color: #00479d;
+    }
+    
+    .curryTitle{
+        font-family: 'KOTRA_BOLD-Bold';
+        font-size: 45px;
+    }
+    
+    #udong{
+        width: 200px;
+        margin-top: 15px;
+    }
+    
+    #bob{
+        width: 205px;
+        margin-top: 15px;
+    }
+    
+    #ramyeon{
+        width: 215px;
+        margin-top: 15px;
+    }
+    
+    #clickText{
+        font-family: 'Noto Sans KR', sans-serif;
+        text-align: center;
+        color: #00479d;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+    
+    .blueStar1{
+        display: block;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .blueStar2{
+        display: block;
+        width: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .blueStar3{
+        display: block;
+        width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    
+    #long{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    #finalLogo{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #logoTitle{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+}
